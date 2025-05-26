@@ -1,0 +1,37 @@
+
+#Lista de estudiantes y calificaciones
+estudiantes = [ {"nombre": "Lucas", "calificacion": 8},
+    {"nombre": "Agustin","calificacion": 8},
+    {"nombre": "Antonhy","calificacion": 12},
+    {"nombre": "Juan","calificacion": 8},
+    {"nombre": "Pedro","calificacion": 5},
+    {"nombre": "Ana","calificacion": 5},
+    {"nombre": "Maria", "calificacion": 12},
+    {"nombre": "Carlos","calificacion": 8},
+    {"nombre": "Paula","calificacion": 2},
+    {"nombre": "Maria","calificacion": 11} #Segundo nombre Maria
+    ] 
+
+#Listo los contadores
+aprobados = 0
+desaprobados = 0
+
+#Vemos la lista de estudiantes y notas, aplicamos los condicionales
+for estudiante in estudiantes:
+    if estudiante["calificacion"] >= 7:
+        aprobados += 1
+    else:
+        desaprobados += 1
+
+#Este código muestra el resultado de los estudiantes aprobados y desaprobados
+print(f"Estudiantes aprobados: {aprobados}")
+print(f"Estudiantes desaprobados: {desaprobados}")  
+ 
+#Lista de calificaciones
+calificaciones = [8, 8, 12, 8, 5, 5, 12, 8, 2, 11]
+
+#Calculamos el promedio
+promedio = sum(calificaciones) / len (calificaciones)
+
+#Resultado del promedio
+print(f"El promedio de las calificaciones es: {promedio:}")
