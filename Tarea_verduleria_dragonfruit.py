@@ -3,20 +3,20 @@
 #Inventario inicial 1
 inventario = ["manzanas", "bananas", "zanahorias", "espinacas", "brocoli", "cebolla", "kiwis"]
 
-#Que producto está en la posición 3 del inventario 2
+#Que producto está en la posición 3 del inventario 
 tercer_producto = inventario[3]
 print(tercer_producto)
 
-#Actualizamos el inventario despues de la venta de bananas 3
+#Actualizamos el inventario despues de la venta de bananas 
 inventario.pop(2) 
 inventario.remove("bananas") 
 print(f"{inventario}, 'Despues de hacer la venta de bananas'")
 
-#Recibo un nuevo envío de productos y los agrego al inventario 4
+#Recibo un nuevo envío de productos y los agrego al inventario 
 inventario.extend(["frutillas", "apio", "papas"])
 print(f"{inventario}, 'Despues de recibir el nuevo envio'")
 
-#Verificamos si las papas están en el inventario mediante la siguiente función:5
+#Verificamos si las papas están en el inventario mediante la siguiente función:
 def verificar_producto(inventario, producto):
     if producto in inventario:
         return f"{producto} está en el inventario."
@@ -28,7 +28,7 @@ producto_a_verificar = "papas"
 print(f"Verificando si {producto_a_verificar} está en el inventario:")
 print(verificar_producto(inventario=inventario, producto=producto_a_verificar))
 
-#Ahora removemos un producto del inventario para agregar la nueva fruta "dragonfruit" 6
+#Ahora removemos un producto del inventario para agregar la nueva fruta "dragonfruit" 
 def remove_producto(inventario, producto):
  if producto in inventario:
    inventario.remove(producto)
