@@ -4,11 +4,11 @@
 inventario = ["manzanas", "bananas", "zanahorias", "espinacas", "brocoli", "cebolla", "kiwis"]
 
 #Que producto está en la posición 3 del inventario 
-tercer_producto = inventario[3]
-print(tercer_producto)
+segundo_producto = inventario[2]
+print(segundo_producto)
 
 #Actualizamos el inventario despues de la venta de bananas 
-inventario.pop(2) 
+inventario.pop(1) 
 print(f"{inventario}, 'Despues de hacer la venta de bananas'")
 
 #Recibo un nuevo envío de productos y los agrego al inventario 
