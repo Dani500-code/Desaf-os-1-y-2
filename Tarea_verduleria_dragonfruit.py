@@ -9,7 +9,6 @@ print(tercer_producto)
 
 #Actualizamos el inventario despues de la venta de bananas 
 inventario.pop(2) 
-inventario.remove("bananas") 
 print(f"{inventario}, 'Despues de hacer la venta de bananas'")
 
 #Recibo un nuevo envío de productos y los agrego al inventario 
